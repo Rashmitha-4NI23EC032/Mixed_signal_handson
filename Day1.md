@@ -15,12 +15,13 @@ A MOSFET does not abruptly switch ON or OFF; instead, its behavior depends conti
   
   <b> These characteristics make MOSFETs the backbone of CMOS and mixed-signal IC design</b>.</p>
   ## **MOSFETs structure and Physcial Operation**
-  <p>A MOSFET consists of:
+1.  <p>A MOSFET consists of:
 - A <b>gate electrode</b> isolated by a thin oxide
 - <b>Source and drain regions</b> formed by doping
 - A <b>semiconductor substrate</b> (body)
+  
 *<b>When a voltage is applied to the gate, it creates an electric field that controls the movement of charge carriers in the channel between the source and drain. This means the current flow in a MOSFET is controlled by voltage. This is different from a BJT, where the current flow is controlled by injecting charge carriers into the device</b>*.</p>
-**Regions of MOSFET Operation**
+2. <u>**Regions of MOSFET Operation**</u>
   <table>
     <tr>
       <td>Region of operation</td>
@@ -44,27 +45,28 @@ A MOSFET does not abruptly switch ON or OFF; instead, its behavior depends conti
       </tr>
   </table>
       
-  **Non-Ideal Effects in MOSFETs**
-  1. Channel Length Modulation
-  2. Mobility Degradation
-  3. Technology Node Impact
-  4. Body Effect
-     ## Role of BJTs in the Mixed-Signals ICs
-     <p>Although MOSFETs dominate ICs, BJTs are still used due to their:
-       
-        - Predictable exponential current-voltage relationship
-        - Well-defined temperature characteristics
+  3. <u>**Non-Ideal Effects in MOSFETs**</u>
+  - *Channel Length Modulation*
+  -  *Mobility Degradation*
+  -   *Technology Node Impact*
+  -   *Body Effect*
+    
+## Role of BJTs in the Mixed-Signals ICs
+<p>Although MOSFETs dominate ICs, BJTs are still used due to their:
+ - Predictable exponential current-voltage relationship
+ - Well-defined temperature characteristics
 BJTs are commonly used in <b>bandgap references (BGR)</b> to exploit their temperature behavior.</p>
+
 ## Fundamental Analog Blocks in Every IC
 1. Bandgap Reference (BGR)
 2. PLL (Phase Lock Loop)
 3. LDO (Low Dropout Regulator)
-   ## Fundamental Problem Every Mixed Signal Chip Faces:
+## Fundamental Problem Every Mixed Signal Chip Faces:
    - Supply voltage varies with battery, load, temperature
    - Digital blocks inject noise
    - Temperature changes transistor behaviour
    - Process variations shift device parameters
-   ## Bandgap Refernce Ciruit (BGR)
+ ## Bandgap Refernce Ciruit (BGR)
    **Block Diagram**
 
    
@@ -84,7 +86,7 @@ BJTs are commonly used in <b>bandgap references (BGR)</b> to exploit their tempe
 **Why they are called as BGR??**
 - The PTAT (proportional to absolute temperature) voltage is added to the CTAT (complementary to absolute temperature) voltage (like V<sub>BE</sub> of a BJT), the resulting <b>voltage converges to a value near Eg/q (Eg divided by electronic charge) at 0 K</b>.
 - This is why the voltage is fundamentally tied to the semiconductor bandgap, not just arbitrarily chosen.
-  ## Cadence TooL
+ ## Cadence TooL
 <br>Cadence Virtuoso is a professional Electronic Design Automation (EDA) tool widely used for designing analog, digital, and mixed-signal ICs.</br>
 It provides a complete environment for:
 - Schematic capture – Drawing circuits graphically
@@ -92,7 +94,7 @@ It provides a complete environment for:
 - Layout design – Physical placement and routing of components
 - Verification – Ensuring the design meets specifications
 Cadence is highly used in VLSI labs and industry for IC design projects, especially for mixed-signal and analog designs.
-  ## Conclusion
+## Conclusion
   
   - Day‑1 of the hands-on session helped build a strong foundation in MOSFET operation, mixed-signal IC concepts, and core analog blocks like Bandgap Reference, LDO, and PLL.
   - We learned how temperature, voltage, and process variations affect circuits and how temperature-independent circuits ensure stable operation.
