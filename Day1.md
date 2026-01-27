@@ -70,6 +70,8 @@ BJTs are commonly used in <b>bandgap references (BGR)</b> to exploit their tempe
    
    <img width="321" height="226" alt="Image" src="https://github.com/user-attachments/assets/2b973193-6dfb-4367-a0da-2beef9b89c50" />
    
+   <img width="389" height="391" alt="Image" src="https://github.com/user-attachments/assets/06a04c32-c923-4acd-ab4e-edceb14c75c5" />
+   
  **Temperature-Independent Reference**
  
 - It Provide reference voltages/currents with <b>minimal temperature dependence</b> for analog circuits.
@@ -78,6 +80,23 @@ BJTs are commonly used in <b>bandgap references (BGR)</b> to exploit their tempe
 - <b>PATA</b>: </b>Voltage generated from <b>difference of V<sub>BE</sub> of two BJTs </b> at different current densities.<br>Increases linearly with temperature (positive TC).</br>
 - <b>V<sub>REF</sub> = α₁·V<sub>BE</sub> + α₂·(VT·ln(n))</b>
 -  Properly choosing α₂·ln(n) cancels the CTAT slope of V<sub>BE</sub> → temperature-independent reference
+  
+**Why they are called as BGR??**
+- The PTAT (proportional to absolute temperature) voltage is added to the CTAT (complementary to absolute temperature) voltage (like V<sub>BE</sub> of a BJT), the resulting <b>voltage converges to a value near Eg/q (Eg divided by electronic charge) at 0 K</b>.
+- This is why the voltage is fundamentally tied to the semiconductor bandgap, not just arbitrarily chosen.
+  ## Cadence TooL
+<br>Cadence Virtuoso is a professional Electronic Design Automation (EDA) tool widely used for designing analog, digital, and mixed-signal ICs.</br>
+It provides a complete environment for:
+- Schematic capture – Drawing circuits graphically
+- Simulation – DC, AC, transient, and Monte Carlo analyses
+- Layout design – Physical placement and routing of components
+- Verification – Ensuring the design meets specifications
+Cadence is highly used in VLSI labs and industry for IC design projects, especially for mixed-signal and analog designs.
+  ## Conclusion
+  
+  - Day‑1 of the hands-on session helped build a strong foundation in MOSFET operation, mixed-signal IC concepts, and core analog blocks like Bandgap Reference, LDO, and PLL.
+  - We learned how temperature, voltage, and process variations affect circuits and how temperature-independent circuits ensure stable operation.
+  - The session also introduced the Cadence tool for schematic design and simulation.
   
   
 
