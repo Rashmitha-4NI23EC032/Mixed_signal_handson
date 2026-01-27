@@ -66,14 +66,19 @@ BJTs are commonly used in <b>bandgap references (BGR)</b> to exploit their tempe
    - Process variations shift device parameters
    ## Bandgap Refernce Ciruit (BGR)
    **Block Diagram**
+
+   
+   <img width="321" height="226" alt="Image" src="https://github.com/user-attachments/assets/2b973193-6dfb-4367-a0da-2beef9b89c50" />
    
  **Temperature-Independent Reference**
-<p>It Provide reference voltages/currents with <b>minimal temperature dependence</b> for analog circuits.
-  <br><b>Key Idea : </b>Combine two quantities with</b>pposite temperature coefficients</b> with proper weighting → <b>resultant has zero or near-zero </b>temperature coefficient</br>.</p>
+ 
+- It Provide reference voltages/currents with <b>minimal temperature dependence</b> for analog circuits.
+- <b>Key Idea : </b>Combine two quantities with</b>pposite temperature coefficients</b> with proper weighting → <b>resultant has zero or near-zero </b>temperature coefficient</br>.
+- <b>Base-emitter voltage of a BJT</b> (V<sub>BE</sub>) decreases with temperature.<br>∂V<sub>BE</sub>/∂T ≈ -1.5 mV/K (negative temperature coefficient).</br>
+- <b>PATA</b>: </b>Voltage generated from <b>difference of V<sub>BE</sub> of two BJTs </b> at different current densities.<br>Increases linearly with temperature (positive TC).</br>
+- <b>V<sub>REF</sub> = α₁·V<sub>BE</sub> + α₂·(VT·ln(n))</b>
+-  Properly choosing α₂·ln(n) cancels the CTAT slope of V<sub>BE</sub> → temperature-independent reference
   
-  
-  
-  Base-emitter voltage of a BJT (V<sub>BE</sub>) decreases with temperature.<br>∂V<sub>BE</sub>/∂T ≈ -1.5 mV/K (negative temperature coefficient).</br> Voltage generated from difference of V<sub>BE</sub> of two BJTs at different current densities.<br>Increases linearly with temperature (positive TC).</br> V<sub>REF</sub> = α₁·V<sub>BE</sub> + α₂·(VT·ln(n))<br> Properly choosing α₂·ln(n) cancels the CTAT slope of V<sub>BE</sub> → temperature-independent reference. </br></p>
   
 
 
