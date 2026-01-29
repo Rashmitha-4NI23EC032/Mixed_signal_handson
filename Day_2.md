@@ -33,6 +33,22 @@ Circuit Type: CMOS inverter / common-source amplifier
 * The input voltage (**Vin**) remains constant, indicating that the change in Vout is due to transistor sizing.
 * This shows that NMOS width directly influences the **DC operating point** of the circuit.
 ## Transient Analysis 
+<img width="994" height="794" alt="Image" src="https://github.com/user-attachments/assets/53b0f82f-5550-40e9-a406-7e32715203b3" />
+
+**Short Observation:**
+
+* The input signal (**Vin**) is a sinusoidal waveform applied to the circuit.
+* The output voltage (**Vout**) follows the input with **reduced amplitude and phase shift**, indicating amplification and inversion behavior.
+* The waveform confirms the **dynamic (transient) response** of the CMOS common-source/inverter configuration.
+
+## AC Analysis 
+
+
+**Short Observation:**
+
+* The AC response shows a **nearly constant gain** at low and mid frequencies.
+* At higher frequencies, the **output magnitude decreases**, indicating the presence of a cutoff frequency.
+* This behavior confirms the **bandwidth limitation** of the CMOS inverter / common-source amplifier due to parasitic capacitances.
 
 
 
