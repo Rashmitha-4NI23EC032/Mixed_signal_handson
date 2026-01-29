@@ -25,4 +25,15 @@ Circuit Type: CMOS inverter / common-source amplifier
 - Analysis Performed: DC, AC (gain), and transient analysis
 
 ## DC Analysis
+<img width="996" height="813" alt="Image" src="https://github.com/user-attachments/assets/c84f22ca-af7f-4410-ab8c-1d48b7aeb5d8" />
+
+**Short Observation:**
+
+* As the NMOS width (**w2**) increases, the **output voltage (Vout)** increases gradually.
+* The input voltage (**Vin**) remains constant, indicating that the change in Vout is due to transistor sizing.
+* This shows that NMOS width directly influences the **DC operating point** of the circuit.
+## Transient Analysis 
+
+
+
 
